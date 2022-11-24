@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesignup.css">
+
+    <script>
+        function validateSignUp() {
+            var name =
+                document.forms.RegForm.Name.value;
+            var email =
+                document.forms.RegForm.EMail.value;
+            var password =
+                document.forms.RegForm.Password.value;
+            var password1=
+                document.forms.RegForm.Password1.value;
+
+            var regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
+
+            var regName = /\d+$/g;
+
+            if (name == "" || regName.test(name)) {
+                window.alert("Please enter your username properly.");
+                name.focus();
+                return false;
+            }
+            if (email == "" || !regEmail.test(email)) {
+                window.alert("Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+            if (password == "") {
+                alert("Please enter your password");
+                password.focus();
+                return false;
+            }
+            if (password.length < 6) {
+                alert("Password should be atleast 6 character long");
+                password.focus();
+                return false;
+
+            }
+            if(password1 != password){
+                alert("Passwords do not match");
+                password1.focus();
+                return false;
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">AquaMate</h2>
+            <a href="index.html" class="btn">Home</a>
+        </nav>
+
+        <div class="wrapper">
+            <h2>Sign Up</h2>
+            <form name="RegForm" onsubmit="return validateSignUp()" method="post" action="LogIn.html">
+                <div class="input-box">
+                    <input type="text" placeholder="Enter your username" name="Name" >
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Enter your E-mail" name="EMail" >
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Enter your password" name="Password" >
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Re-enter your password" name="Password1" >
+                </div>
+                <div class="policy">
+                    <input type="checkbox">
+                    <h3>I accept all Terms & Condition</h3>
+                </div>
+                <div class="input-box button">
+                    <input type="Submit" value="Log In" />
+
+                </div>
+                <div class="text">
+                    <h3>Already have an account? <a href="LogIn.html">Log in here.</a></h3>
+                    <h3>Forgotten your password? <a href="#">Change password.</a></h3>
+                </div>
+            </form>
+        </div>
+</body>
+
+</html>

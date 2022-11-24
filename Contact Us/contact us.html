@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="../css/stylecontact.css">
+	<script>
+		function validation() {
+			var name =
+				document.forms.RegForm.Name.value;
+			var email =
+				document.forms.RegForm.EMail.value;
+			var phone =
+				document.forms.RegForm.PhoneNo.value;
+
+			var regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
+			var regName = /\d+$/g;
+			var regPhone = /^\d{10}$/;
+
+
+			if (name == "" || regName.test(name)) {
+				window.alert("Please enter your name properly.");
+				name.focus();
+				return false;
+			}
+
+			if (email == "" || !regEmail.test(email)) {
+				window.alert("Please enter a valid e-mail address.");
+				email.focus();
+				return false;
+			}
+			if (phone == "" || !regPhone.test(phone)) {
+				alert("Please enter valid phone number.");
+				phone.focus();
+				return false;
+			}
+		}
+	</script>
+
+
+</head>
+
+<body>
+	<div class="hero">
+		<nav>
+			<h2 class="logo">AquaMate</h2>
+			<a href="../index.html" class="btn">Home</a>
+		</nav>
+
+		<div class="contact-in">
+			<div class="contact-map">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.1026668549334!2d101.60165231444404!3d3.0672266977664067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c8f5912644b%3A0x77612fa0225cad69!2sSunway%20University!5e0!3m2!1sen!2smy!4v1668356636474!5m2!1sen!2smy"
+					width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			<div class="contact-form">
+				<h1>Contact Us</h1>
+				<form name="RegForm" onsubmit="return validation()" method="post">
+
+					<input type="text" placeholder= "Name" name="Name" class="contact-form-txt">
+					<input type="text" placeholder= "Email" name="EMail" class="contact-form-txt" />
+					<input type="text" placeholder= "Phone No."  name="PhoneNo" class="contact-form-txt" />
+					<textarea placeholder="Type your message" class="contact-form-textarea"></textarea>
+					<input type="submit" name="Submit" class="contact-form-btn" />
+				</form>
+			</div>
+		</div>
+</body>
+
+</html>

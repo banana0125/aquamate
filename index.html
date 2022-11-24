@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AquaMate</title>
+  <meta name="utf-8" content="width=device-width, initial scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <div id="topheader">
+    <!-- container -->
+    <div class="container">
+      <!-- row -->
+      <div class="row">
+        <!-- LOGO -->
+        <div class="col-md-3">
+          <font
+            style="font-style:italic;; font-size: 55px;color:  #80c5de  ;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+            <a href="./Login/LogIn.html"><button class="button button1">Login</button></a>
+            <a href="./SignUp/SignUp.html"> <button class="button button2">Sign Up</button></a>
+            <div class="title">
+              <b>AquaMate</b>
+            </div>
+          </font>
+
+          <div class="wrap" id = navid>
+            <div class="topnav" >
+              <a href="javascript:void(0);" style="font-size:57px;" class="icon" onclick="myFunction()" >&#9776;</a>
+                <i class="fa fa-bars"></i>
+              <a class="active" href="index.html"><b>HOME</b></a>
+              <div class="dropdown">
+                <a class="women"><b>WOMEN</b></a>
+                <div class="dropdown-content">
+                  <a href="./Women/Women1.html">One-Piece Swim Suit</a>
+                  <a href="./Women/Women2.html">Two-Piece Swim Suit</a>
+                  <a href="./Women/Women3.html">Body Shaping Swim Suit</a>
+                  <a href="./Women/WSun.html">Multi-Sport Sun Protection</a>
+                </div>
+              </div>
+              <div class="dropdown1">
+                <a class="men"><b>MEN</b></a>
+                <div class="dropdown1-content">
+                  <a href="Men/Jammers.html">Jammers</a>
+                  <a href="Men/Aquashorts.html">Aquashorts</a>
+                  <a href="Men/Briefs.html">Briefs</a>
+                  <a href="Men/Watershorts.html">Watershorts</a>
+                  <a href="Men/MSun.html">Multi-Sport Sun Protection</a>
+                </div>
+              </div>
+              <div class="dropdown2">
+                <a class="kids"><b>KIDS</b></a>
+                <div class="dropdown2-content">
+                  <a href="Kids/G5.html">Girls 5 to 16 Years Old</a>
+                  <a href="Kids/B5.html">Boys 5 to 16 Years Old</a>
+                  <a href="Kids/06.html">Infants and Tots 0-6 Years Old</a>
+                </div>
+              </div>
+              <a href="./About Us/about us.html"> <b>ABOUT US</b></a>
+              <a href="./Contact Us/contact us.html"> <b>CONTACT US</b></a>
+            </div>
+            <div class="search">
+              <input type="text" class="searchTerm" placeholder="Search for your desire swimwear">
+              <button type="enter" class="searchButton">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("navid");
+            if (x.className === "wrap") {
+              x.className += " responsive";
+            } else {
+              x.className = "wrap";
+            }
+          }
+          </script>
+</body>
+</html>
