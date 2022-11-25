@@ -26,10 +26,10 @@
 
           <div class="wrap" id = navid>
             <div class="topnav">
-              <a href="javascript:void(0);" style="font-size:36px;" class="icon" onclick="myFunction();myFunction2()" >&#9776;</a>
+              <a href="javascript:void(0);" style="font-size:36px;" class="icon" onclick="myFunction()" >&#9776;</a>
               <a class="active" href="index.html"><b>HOME</b></a>
               <div class="dropdown" id=dd>
-                <a class="women"><b>WOMEN</b></a>
+                <a class="women" onclick="dd()"><b>WOMEN</b></a>
                 <div class="dropdown-content">
                   <a href="./Women/Women1.html">One-Piece Swim Suit</a>
                   <a href="./Women/Women2.html">Two-Piece Swim Suit</a>
@@ -37,8 +37,8 @@
                   <a href="./Women/WSun.html">Multi-Sport Sun Protection</a>
                 </div>
               </div>
-              <div class="dropdown1" >
-                <a class="men"><b>MEN</b></a>
+              <div class="dropdown1" id=dd1>
+                <a class="men" onclick="dd1()"><b>MEN</b></a>
                 <div class="dropdown1-content">
                   <a href="Men/Jammers.html">Jammers</a>
                   <a href="Men/Aquashorts.html">Aquashorts</a>
@@ -47,8 +47,8 @@
                   <a href="Men/MSun.html">Multi-Sport Sun Protection</a>
                 </div>
               </div>
-              <div class="dropdown2" >
-                <a class="kids"><b>KIDS</b></a>
+              <div class="dropdown2" id=dd2>
+                <a class="kids" onclick="dd2()"><b>KIDS</b></a>
                 <div class="dropdown2-content">
                   <a href="Kids/G5.html">Girls 5 to 16 Years Old</a>
                   <a href="Kids/B5.html">Boys 5 to 16 Years Old</a>
@@ -77,14 +77,39 @@
             } else {
               x.className = "wrap";
             }
-          }
-          function myFunction2() {
-            var y =document.getElementById("dd");
-            if (y.className === "dropdown") {
-              y.className += " responsive";
-            } else {
-              y.className = "dropdown";
+            var y = document.getElementById("dd");
+
+            if(y.className == "dropdown"){
+              y.className += "wrap";
+              
+            }else{
+              y.className ="dropdown";
             }
+
+            var z = document.getElementById("dd1");
+
+            if(z.className == "dropdown1"){
+              z.className += "wrap";
+            }else{
+              z.className ="dropdown1";
+            }
+
+            var v = document.getElementById("dd2");
+
+            if(v.className == "dropdown2"){
+              v.className += "wrap";
+            }else{
+              v.className ="dropdown2";
+            }
+          }
+          function dd(){
+            window.location.href='./Women/Women1.html'
+          }
+          function dd1(){
+            window.location.href='Men/Jammers.html'
+          }
+          function dd2(){
+            window.location.href='Kids/G5.html'
           }
           </script>
 </body>

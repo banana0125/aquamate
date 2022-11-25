@@ -172,18 +172,8 @@ a .searchButton {
     float: none;
     display: block;
     text-align: center;
-
   }
-  .dropdown.responsive a {
-    float: none;
-    display:contents;
-    text-align: center;
-
-  }
-  
 }
-
-
 
 .dropdown {
   float: left;
