@@ -25,11 +25,10 @@
           </font>
 
           <div class="wrap" id = navid>
-            <div class="topnav" >
-              <a href="javascript:void(0);" style="font-size:57px;" class="icon" onclick="myFunction()" >&#9776;</a>
-                <i class="fa fa-bars"></i>
+            <div class="topnav">
+              <a href="javascript:void(0);" style="font-size:36px;" class="icon" onclick="myFunction();myFunction2()" >&#9776;</a>
               <a class="active" href="index.html"><b>HOME</b></a>
-              <div class="dropdown">
+              <div class="dropdown" id=dd>
                 <a class="women"><b>WOMEN</b></a>
                 <div class="dropdown-content">
                   <a href="./Women/Women1.html">One-Piece Swim Suit</a>
@@ -38,7 +37,7 @@
                   <a href="./Women/WSun.html">Multi-Sport Sun Protection</a>
                 </div>
               </div>
-              <div class="dropdown1">
+              <div class="dropdown1" >
                 <a class="men"><b>MEN</b></a>
                 <div class="dropdown1-content">
                   <a href="Men/Jammers.html">Jammers</a>
@@ -48,7 +47,7 @@
                   <a href="Men/MSun.html">Multi-Sport Sun Protection</a>
                 </div>
               </div>
-              <div class="dropdown2">
+              <div class="dropdown2" >
                 <a class="kids"><b>KIDS</b></a>
                 <div class="dropdown2-content">
                   <a href="Kids/G5.html">Girls 5 to 16 Years Old</a>
@@ -58,6 +57,7 @@
               </div>
               <a href="./About Us/about us.html"> <b>ABOUT US</b></a>
               <a href="./Contact Us/contact us.html"> <b>CONTACT US</b></a>
+              
             </div>
             <div class="search">
               <input type="text" class="searchTerm" placeholder="Search for your desire swimwear">
@@ -71,10 +71,19 @@
         <script>
           function myFunction() {
             var x = document.getElementById("navid");
+            
             if (x.className === "wrap") {
               x.className += " responsive";
             } else {
               x.className = "wrap";
+            }
+          }
+          function myFunction2() {
+            var y =document.getElementById("dd");
+            if (y.className === "dropdown") {
+              y.className += " responsive";
+            } else {
+              y.className = "dropdown";
             }
           }
           </script>

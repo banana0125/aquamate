@@ -2,7 +2,7 @@ body {
   background-image: url(../Images/backgroud1.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size:contain;
   background-position: 0px 115px;
   margin: 0;
 
@@ -174,7 +174,16 @@ a .searchButton {
     text-align: center;
 
   }
+  .dropdown.responsive a {
+    float: none;
+    display:contents;
+    text-align: center;
+
+  }
+  
 }
+
+
 
 .dropdown {
   float: left;
