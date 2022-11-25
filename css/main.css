@@ -2,15 +2,9 @@ body {
   background-image: url(../Images/backgroud1.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
   background-position: 0px 115px;
   margin: 0;
-}
-
-@media screen and (min-width: 1900px) and (max-width:1930px){
-  .body {
-    background-size: cover;
-  }
 }
 
 .title {
