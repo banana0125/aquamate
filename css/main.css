@@ -2,10 +2,15 @@ body {
   background-image: url(../Images/backgroud1.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size:contain;
+  background-size: contain;
   background-position: 0px 115px;
   margin: 0;
+}
 
+@media screen and (max-width: 1900px) {
+  .body {
+    background-size: cover;
+  }
 }
 
 .title {
@@ -274,6 +279,6 @@ a .searchButton {
   display: block;
 }
 
-.col{
+.col {
   margin-top: 15%;
 }
