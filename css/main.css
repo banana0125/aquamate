@@ -273,3 +273,7 @@ a .searchButton {
 .dropdown2:hover .dropdown2-content {
   display: block;
 }
+
+.col{
+  margin-top: 15%;
+}
