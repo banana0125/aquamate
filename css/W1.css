@@ -131,6 +131,48 @@ a .searchButton {
 
 }
 
+.wrap .icon {
+    display: none;
+    float: right;
+  
+  }
+  
+  @media screen and (max-width: 1190px) {
+  
+    .wrap a:not(:first-child),
+    .dropdown,
+    .dropdown1,
+    .dropdown2,
+    .search {
+      display: none;
+    }
+  
+    .wrap .icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 1190px) {
+    .wrap.responsive {
+      position: relative;
+      padding-bottom: 10px;
+    }
+  
+    .wrap.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+  
+    }
+  
+    .wrap.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+  }
+
 .dropdown {
     float: left;
     overflow: hidden;
@@ -241,10 +283,47 @@ a .searchButton {
     z-index: -1;
 }
 
+.imgwtext{
+    text-align: justify;
+    width: 300px;
+    position: absolute;
+    margin-top: 31%;
+    margin-left: 3%;
+    z-index: -99;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.imgwtext:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.imgwtext img{
+    display:block;
+    
+}
+
+.column {
+    float: left;
+    width: 24%;
+    padding: 5px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+  
+  /* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%;
+}
+
 .footer {
     width: 100%;
     position: relative;
-    top: 950px;
+    top: 1080px;
     height: auto;
     background-color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
