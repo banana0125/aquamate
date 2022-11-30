@@ -1,9 +1,6 @@
 body {
-    background-image: url(../Images/Women1.png);
-    background-repeat: no-repeat;
+    background-color: white;
     overflow-x: hidden;
-    background-size: 100% 100%;
-    background-position: 0px 115px;
 }
 
 .title {
@@ -274,7 +271,7 @@ a .searchButton {
 
 .content {
     position: absolute;
-    top: 370px;
+    margin-top: 10%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: block;
     align-items: center;
@@ -283,47 +280,9 @@ a .searchButton {
     z-index: -1;
 }
 
-.imgwtext{
-    text-align: justify;
-    width: 300px;
-    position: absolute;
-    margin-top: 31%;
-    margin-left: 3%;
-    z-index: -99;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.imgwtext:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.imgwtext img{
-    display:block;
-    
-}
-
-.column {
-    float: left;
-    width: 24%;
-    padding: 5px;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-}
-  
-  /* Clear floats after image containers */
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-    width: 100%;
-}
-
 .footer {
     width: 100%;
     position: relative;
-    top: 1080px;
     height: auto;
     background-color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -364,4 +323,34 @@ a .searchButton {
 
 .cf {
     clear: both;
+}
+
+.z {
+    text-align: center;
+  }
+
+.t {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .test {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+  figure{
+    float:left;
+    vertical-align: left;
+    padding: 0px;
+}
+
+figcaption{
+    text-indent: 0;
+    padding-top: 7px;
+    text-align: center;
+    font-size:medium;
+}
+figcaption a{
+    color: #000000;
 }
